@@ -181,7 +181,7 @@ worldMapView2.setLocations(locations: wmLocations2)
 worldMapView2.startAnimation()
 ```
 
-<img src="https://moly-blog.s3.ap-northeast-2.amazonaws.com/WMAnimatorExample.gif" width="100" height="220" />
+<img src="https://moly-blog.s3.ap-northeast-2.amazonaws.com/WMAnimatorExample.gif" width="200" height="440" />
 
 
 ## Requirements
