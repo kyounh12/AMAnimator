@@ -1,6 +1,6 @@
 # WMAnimator
 
-[![CI Status](https://img.shields.io/travis/abcthing/WMAnimator.svg?style=flat)](https://travis-ci.org/abcthing/WMAnimator)
+[![CI Status](https://img.shields.io/travis/Moly/WMAnimator.svg?style=flat)](https://travis-ci.org/Moly/WMAnimator)
 [![Version](https://img.shields.io/cocoapods/v/WMAnimator.svg?style=flat)](https://cocoapods.org/pods/WMAnimator)
 [![License](https://img.shields.io/cocoapods/l/WMAnimator.svg?style=flat)](https://cocoapods.org/pods/WMAnimator)
 [![Platform](https://img.shields.io/cocoapods/p/WMAnimator.svg?style=flat)](https://cocoapods.org/pods/WMAnimator)
@@ -22,7 +22,7 @@ pod 'WMAnimator'
 
 ## Author
 
-abcthing, kyounh12@snu.ac.kr
+Moly, kyounh12@snu.ac.kr
 
 ## License
 

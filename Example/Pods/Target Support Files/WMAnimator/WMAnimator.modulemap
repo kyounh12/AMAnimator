@@ -1,0 +1,6 @@
+framework module WMAnimator {
+  umbrella header "WMAnimator-umbrella.h"
+
+  export *
+  module * { export * }
+}

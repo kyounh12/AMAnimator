@@ -1,0 +1,6 @@
+framework module Pods_WMAnimator_Example {
+  umbrella header "Pods-WMAnimator_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -15,6 +15,9 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		6AC3BA3C58836A9805CEC10E /* Pods_WMAnimator_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54AE01CB74B7B1D2830D1396 /* Pods_WMAnimator_Example.framework */; };
+		B4114416245EFE4F002ACCE8 /* MyLottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4114415245EFE4F002ACCE8 /* MyLottieView.swift */; };
+		B4114418245EFE5F002ACCE8 /* MyCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4114417245EFE5F002ACCE8 /* MyCustomView.swift */; };
+		B411442A245F0F12002ACCE8 /* myLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = B4114429245F0F12002ACCE8 /* myLottie.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +31,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08603BA2657C22710D20BE1D /* WMAnimator.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WMAnimator.podspec; path = ../WMAnimator.podspec; sourceTree = "<group>"; };
 		54AE01CB74B7B1D2830D1396 /* Pods_WMAnimator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WMAnimator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* WMAnimator_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WMAnimator_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,9 +45,12 @@
 		791D0B4C1FA61EBF37E182E8 /* Pods-WMAnimator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMAnimator_Example.debug.xcconfig"; path = "Target Support Files/Pods-WMAnimator_Example/Pods-WMAnimator_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8C04AF9034F1788A55D0BCC0 /* Pods-WMAnimator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMAnimator_Example.release.xcconfig"; path = "Target Support Files/Pods-WMAnimator_Example/Pods-WMAnimator_Example.release.xcconfig"; sourceTree = "<group>"; };
 		92BD091B77145FBCE3BA2188 /* Pods-WMAnimator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMAnimator_Tests.release.xcconfig"; path = "Target Support Files/Pods-WMAnimator_Tests/Pods-WMAnimator_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		AF16635C4EE0427453D52D16 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		AF16635C4EE0427453D52D16 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B4114415245EFE4F002ACCE8 /* MyLottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLottieView.swift; sourceTree = "<group>"; };
+		B4114417245EFE5F002ACCE8 /* MyCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomView.swift; sourceTree = "<group>"; };
+		B4114429245F0F12002ACCE8 /* myLottie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = myLottie.json; sourceTree = "<group>"; };
 		C215343FF13B525955D6AA99 /* Pods-WMAnimator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMAnimator_Tests.debug.xcconfig"; path = "Target Support Files/Pods-WMAnimator_Tests/Pods-WMAnimator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		CF151BA6750FC0B9CF0973F1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		CF151BA6750FC0B9CF0973F1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FDED1844CA8252ADC86D0EC3 /* Pods_WMAnimator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WMAnimator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -77,7 +82,6 @@
 				C215343FF13B525955D6AA99 /* Pods-WMAnimator_Tests.debug.xcconfig */,
 				92BD091B77145FBCE3BA2188 /* Pods-WMAnimator_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -107,6 +111,9 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				B4114415245EFE4F002ACCE8 /* MyLottieView.swift */,
+				B4114429245F0F12002ACCE8 /* myLottie.json */,
+				B4114417245EFE5F002ACCE8 /* MyCustomView.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -144,7 +151,6 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				08603BA2657C22710D20BE1D /* WMAnimator.podspec */,
 				CF151BA6750FC0B9CF0973F1 /* README.md */,
 				AF16635C4EE0427453D52D16 /* LICENSE */,
 			);
@@ -227,6 +233,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -246,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B411442A245F0F12002ACCE8 /* myLottie.json in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
@@ -314,10 +322,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-WMAnimator_Example/Pods-WMAnimator_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/WMAnimator/WMAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WMAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -332,6 +342,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				B4114418245EFE5F002ACCE8 /* MyCustomView.swift in Sources */,
+				B4114416245EFE4F002ACCE8 /* MyLottieView.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

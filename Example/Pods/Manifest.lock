@@ -1,0 +1,23 @@
+PODS:
+  - lottie-ios (3.1.8)
+  - WMAnimator (0.1.0)
+
+DEPENDENCIES:
+  - lottie-ios
+  - WMAnimator (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - lottie-ios
+
+EXTERNAL SOURCES:
+  WMAnimator:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  lottie-ios: 48fac6be217c76937e36e340e2d09cf7b10b7f5f
+  WMAnimator: e988db9e9e145b20ab668c23d4e1126423bbb02d
+
+PODFILE CHECKSUM: 7eb8fcdd963257ea7d039d0316d2994692793f72
+
+COCOAPODS: 1.9.1

@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  WMAnimator
 //
-//  Created by abcthing on 05/03/2020.
-//  Copyright (c) 2020 abcthing. All rights reserved.
+//  Created by Moly on 05/03/2020.
+//  Copyright (c) 2020 Moly. All rights reserved.
 //
 
 import UIKit

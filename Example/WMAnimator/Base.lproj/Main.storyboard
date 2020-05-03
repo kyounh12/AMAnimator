@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +18,56 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uVf-yY-YrL" customClass="WMWorldMapView" customModule="WMAnimator">
+                                <rect key="frame" x="16" y="0.0" width="343" height="250"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="39E-VX-1Lq"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p4o-zl-5cB" customClass="WMWorldMapView" customModule="WMAnimator">
+                                <rect key="frame" x="16" y="417" width="343" height="250"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="UwA-xO-ahm"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyLottieView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhy-mZ-kdP">
+                                <rect key="frame" x="136" y="266" width="103" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyCustomView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Dp-hP-oPo">
+                                <rect key="frame" x="128" y="380" width="119" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uVf-yY-YrL" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="EC7-1H-1u2"/>
+                            <constraint firstItem="dhy-mZ-kdP" firstAttribute="top" secondItem="uVf-yY-YrL" secondAttribute="bottom" constant="16" id="IBp-BP-GVY"/>
+                            <constraint firstItem="9Dp-hP-oPo" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="K2m-Dd-X5L"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="p4o-zl-5cB" secondAttribute="bottom" id="OAn-SM-yQv"/>
+                            <constraint firstItem="p4o-zl-5cB" firstAttribute="top" secondItem="9Dp-hP-oPo" secondAttribute="bottom" constant="16" id="bTq-zi-ZPk"/>
+                            <constraint firstItem="uVf-yY-YrL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="oTu-Do-mpY"/>
+                            <constraint firstItem="p4o-zl-5cB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="t9C-fV-HER"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uVf-yY-YrL" secondAttribute="trailing" id="uEY-rv-wU5"/>
+                            <constraint firstItem="dhy-mZ-kdP" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="wJa-WS-RK0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="p4o-zl-5cB" secondAttribute="trailing" id="ykM-Bz-aaj"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="worldMapView" destination="uVf-yY-YrL" id="m0g-Wd-ONP"/>
+                        <outlet property="worldMapView2" destination="p4o-zl-5cB" id="UTx-87-HCr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="134"/>
         </scene>
     </scenes>
 </document>

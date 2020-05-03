@@ -2,6 +2,7 @@ use_frameworks!
 
 target 'WMAnimator_Example' do
   pod 'WMAnimator', :path => '../'
+  pod 'lottie-ios'
 
   target 'WMAnimator_Tests' do
     inherit! :search_paths
