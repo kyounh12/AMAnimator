@@ -16,28 +16,25 @@ class MyLottieView: UIView, WMAnimationView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         initialize()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        
         initialize()
     }
     
     public override func awakeFromNib() {
         super.awakeFromNib()
-        
         initialize()
     }
     
     private func initialize() {
         
         self.backgroundColor = .clear
-        
         addSubview(circleView)
         
+        // Configure constraints
         circleView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint(item: circleView, attribute: .leading, relatedBy: .equal, toItem: self, attribute: .leading, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: circleView, attribute: .trailing, relatedBy: .equal, toItem: self, attribute: .trailing, multiplier: 1, constant: 0).isActive = true
@@ -47,6 +44,7 @@ class MyLottieView: UIView, WMAnimationView {
     
     func startAnimation() {
         
+        // Starts animation from start
         circleView.stop()
         circleView.play(fromProgress: 0, toProgress: 1)
         
@@ -54,6 +52,7 @@ class MyLottieView: UIView, WMAnimationView {
     
     func stopAnimation() {
         
+        // Stops animation
         circleView.stop()
     }
     

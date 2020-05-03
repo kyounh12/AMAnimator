@@ -42,7 +42,7 @@ class MyCustomView: UIView, WMAnimationView {
         
         addSubview(testView)
         
-        (testView).translatesAutoresizingMaskIntoConstraints = false
+        testView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint(item: testView, attribute: .leading, relatedBy: .equal, toItem: self, attribute: .leading, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: testView, attribute: .trailing, relatedBy: .equal, toItem: self, attribute: .trailing, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: testView, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1, constant: 0).isActive = true
