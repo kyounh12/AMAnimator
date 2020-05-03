@@ -63,6 +63,18 @@ class MyLottieView: UIView, WMAnimationView {
 
 ```
 
+Implement `WMWorldMapViewDelegate` to provide size for each `WMAnimationView`
+```swift
+extension ViewController: WMWorldMapViewDelegate {
+    func sizeForAnimationView(worldMapView: WMWorldMapView, at index: Int) -> CGSize {
+        return CGSize(
+            width: 5,
+            height: 5
+        )
+    }
+}
+```
+
 Create `WMAnimatingLocation` array with your locations and `WMAnimationView`. And additionally set some properties to customize your WMWorldMapView.
 ```swift
 // ======= Example 1 - worldMapView =======
@@ -169,7 +181,7 @@ worldMapView2.setLocations(locations: wmLocations2)
 worldMapView2.startAnimation()
 ```
 
-![](https://moly-blog.s3.ap-northeast-2.amazonaws.com/WMAnimatorExample.gif)
+![](https://moly-blog.s3.ap-northeast-2.amazonaws.com/WMAnimatorExample.gif){: width="100" height="220"}
 
 
 ## Requirements
