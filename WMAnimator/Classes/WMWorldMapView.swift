@@ -25,7 +25,7 @@ public class WMWorldMapView: UIView {
     // MARK: - public variables
     
     /// WMWorldMapViewDelegate.
-    public var delegate: WMWorldMapViewDelegate?
+    public weak var delegate: WMWorldMapViewDelegate?
     
     /// Worldmap image. It changes image of `worldMapImageView`.
     public var worldMapImage: UIImage? = UIImage(named: "worldmap_gall_stereographic") {
